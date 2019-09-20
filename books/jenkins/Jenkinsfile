@@ -62,7 +62,7 @@ pipeline {
                 //TODO: Create a new app and expose the service
       sh '''
 oc new-app --name ${APP_NAME} nodejs~https://github.com/BernardVA/DO288-apps#custom-pipeline \
---build-env npm_config_registry=${NEXUS_SERVER}--context-dir books
+--build-env npm_config_registry=${NEXUS_SERVER} --context-dir books
 oc expose service ${APP_NAME}
          '''
             }

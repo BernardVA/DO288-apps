@@ -14,8 +14,9 @@ echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 
 DATE='date "%H:%M"'
-echo "proudly served version ${HTTPD_VERSION} on day/time ${DATE}">>./index.html
-
+echo "proudly served version ${HTTPD_VERSION} on day/time ${DATE}" >> ./index.html
+echo "page built ${DATE}" >> ./index.html
+echo "page also  built $DATE" >> ./index.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############

@@ -13,7 +13,7 @@ config_s2i
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 
-DATE='date "+%j @ %H:%M:%S"'
+DATE='date "%j @ %H:%M"'
 echo "proudly served version ${HTTPD_VERSION} on day/time ${DATE}">>./index.html
 
 

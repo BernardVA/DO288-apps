@@ -11,7 +11,7 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-##cp -Rf /tmp/src/*.html ./
+cp -Rf /tmp/src/bvadir/*.html ./
 
 DATE=`date "+%H and %M"`
 DATE2=`date "+%b %d, %Y @ %H:%M %p"`
